@@ -1,35 +1,48 @@
+/* make font arial */
 body {
-  font-family: Arial;
-  padding: 10px;
+	font-family: Arial;
 }
 
-h1, h2 {
-  text-align: center;
+/* center text */
+.centered {
+	text-align: center;
+	clear: both;
+	
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+/* column attributes*/
+
+/*60% column*/
+.column1 {
+	float: left;
+	width: 60%;
 }
 
-.left {
-  width: 60%;
+/*40% column*/
+.column2 {
+	float: left;
+	width: 40%;
 }
 
-.right {
-  width: 40%;
+/* frame */
+#frame {
+	width: 500px;
+	height: 500px;
+	margin-left: 50px;
 }
 
-.left-border {
-  border-left: 3px solid black;
-  height: 500px;
-  position: absolute;
+/* line features */
+line {
+	stroke: black;
+	stroke-width: 10;
+}
+/* border class */
+.addBorder {
+	stroke: pink;
+	stroke-width: 4;
 }
 
-.bottom-border {
-  border-bottom: 3px solid black;
-  width: 500px;
-  position: absolute;
+/* hover color */
+circle:hover {
+	fill: orange;
 }

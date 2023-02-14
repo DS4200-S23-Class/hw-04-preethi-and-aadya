@@ -3,66 +3,94 @@
 
 <head>
     <meta charset=utf-8/>
+
+    <!-- link css stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- add title -->
     <title>hw-04</title>
 </head>
-
-
 <body>
+    <!-- header -->
     <h1 class="centered">hw-04: Event Handling</h1>
-    <div id="columns">
-        <div id="left-column">
-            <svg height="500" width="60%" id="plot">
-                <line class="axis" x1="0" y1="0" x2="0" y2="100%"/>
-                <line class="axis" x1="0" y1="100%" x2="100%" y2="100%"/>
-                <circle class="point" cx="10%" cy="80%" r="10"></circle>
-                <circle class="point" cx="20%" cy="60%" r="10"></circle>
-                <circle class="point" cx="60%" cy="80%" r="10"></circle>
-                <circle class="point" cx="90%" cy="10%" r="10"></circle>
+
+    <div class="row">
+        <!-- create 2 columns -->
+        <div class="column1">
+            <!-- svg frame for scatterplot -->
+            <svg id="frame">
+                <line x1="0" y1="500" x2="0" y2="0"/>
+                <line x1="0" y1="500" x2="500" y2="500"/>
+                <!-- plot given points-->
+                <circle id="point1" cx="50" cy="400" r="15"/>
+                <circle id="point2" cx="100" cy="300" r="15"/>
+                <circle id="point3" cx="300" cy="400" r="15"/>
+                <circle id="point4" cx="450" cy="50" r="15"/>
             </svg>
         </div>
-        <div id="right-column">
-            <p id="last-clicked"></p>
+
+        <div class="column2">
+            <!-- Create place holders for text -->
+            <p id="last_point1"></p>
+            <p id="last_point2"></p>
             <form>
-                <label for="x-value">Select x-coordinate:</label>
-                <select name="x-value" id="x-value">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
+            <label>Select the x coordinate for the point you want to add.</label>
+                <!-- Create drop down menus -->
+              <select id="x-coordinates">
+                <option value="point1x">1</option>
+                <option value="point2x">2</option>
+                <option value="point3x">3</option>
+                <option value="point4x">4</option>
+                <option value="point5x">5</option>
+                <option value="point6x">6</option>
+                <option value="point7x">7</option>
+                <option value="point8x">8</option>
+                <option value="point9x">9</option>
+              </select>
+            <br><br>
+            <label>Select the y coordinate for the point you want to add.</label>
+              <select id="y-coordinates">
+                <option value="point1y">1</option>
+                <option value="point2y">2</option>
+                <option value="point3y">3</option>
+                <option value="point4y">4</option>
+                <option value="point5y">5</option>
+                <option value="point6y">6</option>
+                <option value="point7y">7</option>
+                <option value="point8y">8</option>
+                <option value="point9y">9</option>
                 </select>
-                <br><br>
-                <label for="y-value">Select y-coordinate:</label>
-                <select name="y-value" id="y-value">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-                <br><br>
-                <button type="button" id="submit-button">Add point</button>
+            <br><br>
+            <button type="button" id="subButton">Add point</button>
             </form>
         </div>
     </div>
-    <h2>Acknowledgements</h2>
-    <ul>
-        <li><a href="https://www.geeksforgeeks.org/html-svg-basics/?ref=lbp">HTML Graphics</a></li>
-        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to Flexbox</a></li>
-        <li><a href="https://learntheweb.courses/topics/advanced-svg/">Advanced SVG</a></li>
-        <li><a href="https://www.geeksforgeeks.org/html-tags-a-to-z-list/?ref=lbp">HTML Tags</a></li>
-    </ul>
 
-    <script src="main.js"></script>
+<!-- Create div for sources -->
+<h2>Acknowledgements</h2>
+
+<div>
+ <ul>
+         <li>
+             <a href="https://www.geeksforgeeks.org/html-svg-basics/?ref=lbp" target="_blank">HTML Graphics</a>
+         </li>
+         <li>
+             <a href="https://www.w3schools.com/css/default.asp">CSS tutorial</a>
+         </li>
+         <li>
+             <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to Flexbox</a>
+         </li>
+         <li>
+           <a href="https://learntheweb.courses/topics/advanced-svg/">Advanced SVG</a>
+       </li>
+         <li>
+             <a href="https://www.geeksforgeeks.org/html-tags-a-to-z-list/?ref=lbp">HTML Tags</a>
+         </li>
+ </ul>
+</div>
+<!--call javacript file-->
+<script src = "main.js"></script> 
+
 </body>
 
 </html>
