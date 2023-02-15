@@ -46,3 +46,15 @@ line {
 circle:hover {
 	fill: orange;
 }
+/* new point */
+.new-point {
+  line-height: 2.0;
+}
+
+#cx {
+  width: 38ch;
+}
+
+#cy {
+  width: 38ch;
+}

@@ -22,14 +22,19 @@
                 <line x1="0" y1="500" x2="0" y2="0"/>
                 <line x1="0" y1="500" x2="500" y2="500"/>
                 <!-- plot given points-->
-                <circle id="point1" cx="50" cy="400" r="15"/>
-                <circle id="point2" cx="100" cy="300" r="15"/>
-                <circle id="point3" cx="300" cy="400" r="15"/>
-                <circle id="point4" cx="450" cy="50" r="15"/>
+                <circle id="point" cx="50" cy="400" r="10"/>
+                <circle id="point" cx="100" cy="300" r="10"/>
+                <circle id="point" cx="300" cy="400" r="10"/>
+                <circle id="point" cx="450" cy="50" r="10"/>
             </svg>
         </div>
 
         <div class="column2">
+            <div id="selected-point">
+                <label>
+                    Selected Point
+                </label>
+            </div>
             <!-- Create place holders for text -->
             <p id="last_point1"></p>
             <p id="last_point2"></p>
@@ -37,28 +42,28 @@
             <label>Select the x coordinate for the point you want to add.</label>
                 <!-- Create drop down menus -->
               <select id="x-coordinates">
-                <option value="point1x">1</option>
-                <option value="point2x">2</option>
-                <option value="point3x">3</option>
-                <option value="point4x">4</option>
-                <option value="point5x">5</option>
-                <option value="point6x">6</option>
-                <option value="point7x">7</option>
-                <option value="point8x">8</option>
-                <option value="point9x">9</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
               </select>
             <br><br>
             <label>Select the y coordinate for the point you want to add.</label>
               <select id="y-coordinates">
-                <option value="point1y">1</option>
-                <option value="point2y">2</option>
-                <option value="point3y">3</option>
-                <option value="point4y">4</option>
-                <option value="point5y">5</option>
-                <option value="point6y">6</option>
-                <option value="point7y">7</option>
-                <option value="point8y">8</option>
-                <option value="point9y">9</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
                 </select>
             <br><br>
             <button type="button" id="subButton">Add point</button>
